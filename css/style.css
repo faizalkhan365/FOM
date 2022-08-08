@@ -1,0 +1,273 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+.navbar{
+    background-color: #C53A5C;
+    padding: 0.5rem 1.5rem 0;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 3rem;
+    color: rgb(248, 246, 230);
+    font-weight: bolder;
+    text-align: left;
+}
+/* navbar media queries */
+@media (max-width: 1100px){
+    .navbar-brand{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+}
+@media (max-width: 721px){
+    .navbar-brand{
+        font-size: 2.4rem;
+    }
+    .container{
+        padding-bottom: 1%;
+    }
+}
+@media (max-width: 631px){
+    .navbar-brand{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 567px){
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 514px){
+    .navbar-brand{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 478px){
+    .navbar-brand{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 327px){
+    .navbar-brand{
+        font-size: 0.4rem;
+        
+    }
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+.home-img{
+    width:100%;
+}
+
+h3 {
+    margin: 0;
+  }
+  
+ h3,p {
+    margin-top: 0;
+  }
+#products-section{
+    background-color: #fff;
+}
+.products_title{
+    color: #3AC5A3;
+    margin: 5px auto 5px;
+    font-size: 3rem;
+    font-weight: bolder;
+    transition: .1s all ease-in-out;
+    width: 100%;
+}
+@media (max-width: 991px){
+    .products_title{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+@media (max-width: 466px){
+    .products_title{
+        font-size: 1.2rem;
+    }
+}
+.products_title:hover{
+    transform: scale(1.1);
+    color: #C53A5C;
+}
+.img-divs{
+   overflow: hidden;
+   position: relative;
+}
+.img-divs p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    color: #fff;
+    margin-bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.img-divs:hover{
+    cursor: pointer;
+}
+.img-divs:hover p{
+    visibility: visible;
+    transition: .5s all ease-in-out;
+    opacity: 0.7;
+    padding: 8px 15px;
+}
+#products-section img{
+    filter: grayscale(1);
+    transition: .5s all ease-in-out;
+    width: 100%;
+}
+
+#products-section img:hover{
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+@media (max-width: 1920px){
+    #products-section img{
+        filter: grayscale(0);
+    }
+}
+
+/* features section */
+#features-section{
+    padding: 6% 12% ;
+    position: relative;
+    text-align: center;
+}
+.feature-box{
+    padding: 6%;
+}
+h3{
+    font-weight: bold;
+}
+.f-icon{
+    color: #3AC5A3;
+    margin-bottom: 1rem;
+}
+.f-icon:hover{
+    color: #C53A5C;
+}
+
+/* Testimonials Section */
+#testimonials-section{
+    text-align: center;
+    background-color: #C53A5C;
+    color: #fff;
+    
+}
+.testimonial-text{
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 900;
+}
+@media (max-width: 1100px){
+    .testimonial-text{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 300px){
+    .testimonial-text{
+        font-size: 1rem;
+    }
+}
+.testimonial-image{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+    width: 15%;
+}
+
+/* Socials */
+#socials-section{
+    padding: 5% 10%;
+}
+.socials{
+    text-align: center;
+}
+.brand-image{
+    color: black;
+    margin: 2rem 2rem;
+}
+.spreadTheWord, .shareWithFriends{
+    margin: 2rem auto;
+}
+.spreadTheWord{
+    font-weight: bolder;
+}
+.shareWithFriends{
+    font-weight: light;
+    color: #8f8f8f;
+}
+.fb-icon:hover{
+    color: #4267B2;
+}
+.twitter-icon:hover{
+    color: #1DA1F2;
+}
+.pint-icon:hover{
+    color: #E60023;
+}
+
+/* Back to top scroll button */
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  @media (min-width: 500px) {
+    #button {
+      margin: 30px;
+    }
+  }
+
+  /* Footer */
+#footer{
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+    height: 1.5rem;
+}
+.footer-span{
+    color: #fff;
+}
