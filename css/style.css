@@ -123,7 +123,7 @@ h3 {
     padding: 8px 15px;
 }
 #products-section img{
-    filter: grayscale(1);
+
     transition: .5s all ease-in-out;
     width: 100%;
 }
@@ -132,9 +132,9 @@ h3 {
     filter: grayscale(0);
     transform: scale(1.15);
 }
-@media (max-width: 1920px){
+@media (min-width: 1280px){
     #products-section img{
-        filter: grayscale(0);
+        filter: grayscale(1);
     }
 }
 
